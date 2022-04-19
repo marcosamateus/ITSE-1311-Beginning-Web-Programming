@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+}
+body{
+  background-image: url("dean-SuGEzQkeJno-unsplash.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+header nav {
+  /* background-color: #d2dfdf; */
+   background: linear-gradient(to bottom, #d2dfdf 0%,rgba(0, 0, 0, .8) 10%,rgba(0, 0, 0, .8) 90%,#d2dfdf 100%);
+   height: auto;
+   padding: 10px;
+   text-align: center;
+}
+
+header nav ul{
+   list-style-type: none;
+}
+
+header nav ul>li {
+   display: inline-block;
+   width: 12%;
+
+}
+
+header nav a {
+   text-decoration: none;
+   font-size: 1.5rem;
+}
+
+header nav a:link{color: white;}
+header nav a:visited {color: rgb(126, 126, 107);}
+header nav a:hover {color:rgb(116, 168, 109);}
+header h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 5rem;
+  text-align: center;
+  color: rgb(116, 168, 109);
+  text-shadow: 5px 5px black;
+
+}
+h2 {
+  font-size: 3rem;
+}
+p{
+  font-size: 18px;
+}
+li{
+  font-size: 18px;
+}
+@media only screen and (min-width: 1025px){
+
+    .col1{
+       width: 25%;
+       float: left;
+       padding: 1em;
+     }
+    
+     .col2{
+       width: 50%;
+       float: left;
+       padding: 1em;
+     }
+    
+     .col3{
+         width: 25%;
+         float: left;
+         padding: 1em;
+     }
+   
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px){
+    body {
+        background-color: blue;
+    }
+    .col1{
+       width: 50%;
+       float: left;
+       padding: 1em;
+     }
+    
+     .col2{
+       width: 50%;
+       float: left;
+       padding: 1em;
+     }
+     .col3{
+       width: 50%;
+       float: left;
+       padding: 1em;
+   }
+}
+   @media only screen and (max-width: 600px){
+    body{
+        background-color: green;
+    }
+}
+img{
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+/*layout*/
+.wrapper {
+  background-color:rgba(155, 155, 155, 0.63);
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1em;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.wrapper::after{
+ content: " ";
+ clear: both;
+ display: block;
+}
+h2 {
+  text-align: center;
+}
