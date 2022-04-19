@@ -1,0 +1,62 @@
+<!--
+    Marcos Mateus
+    11/6/20
+    -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> Holiday Poll</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+    <body>
+        <div class="container">
+        <h1>Holiday Poll</h1>
+        <form id="HolidayPollForm" action="feedback.php" method="post">
+            <label for="firstName">First Name: </label>
+            <input type="text" id="firstname" name="firstname" required>
+            <label for="lastName">Last Name: </label>
+            <input type="text" id="lastName" name="lastName" required>
+            <label for="email">E-mail: </label>
+            <input type="text" id="email" name="email" required>
+
+         <div class="group">
+        <h3>What is your favorite Holiday?</h3>
+
+        <select id="holiday" required>
+            <option value="" disabled selected hidden>Select a Holiday</option>
+            <option value="NYE">New Year's Eve</option>
+            <option value="Valentines">Valentine's Day</option>
+            <option value="Easter">Easter</option>
+            <option value="Halloween">Halloween</option>
+            <option value="Thanksgiving">Thanksgiving</option>
+            <option value="Christmas">Christmas</option>
+        </select>
+
+        <label for="otherHoliday">If your Holiday is not on the list, you can enter it here!</label>
+        <input type="text" id="otherHoliday" name="otherHoliday">
+        </div>
+
+        <div class="group">
+            <h3>Would you like to recieve emails about your favortie holiday?</h3>
+    
+            <label for="emailYes">Yes</label>
+            <input type="radio" id="emailYes" name="email" value="yes">
+            <label for="emailSometimes">Yes, Sometimes.</label>
+            <input type="radio" id="emailSometimes" name="email">
+            <label for="emailNo">No</label>
+            <input type="radio" id="emailNo" name="email" value="no">
+            </div>
+            
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+
+            <textarea id="Reason" name="reason" rows="5" cols="33">
+                No matter what your favorite Holiday is, the best part of any of them is the time you get to spend with friends and family.
+                </textarea>
+
+        </form>
+        </div>
+    </body>
+</html>

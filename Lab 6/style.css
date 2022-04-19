@@ -1,0 +1,106 @@
+input[type=text], input[type=email], select{
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    background-color: #f1f1f1;
+}
+select>option{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans"
+}
+select{
+    appearance: button;
+    border-radius: 2px;
+    background-color: grey;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    color: white;
+    font-size: inherit;
+    display: block;
+    font-family: "Trebuchet MS", "Lucida Snas Unicod", "Lucida Grande", "Lucida Sans";
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+input[type=submit], input[type=reset]{
+    width: 50%;
+    display: block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    float: left;
+    background-color: grey;
+    color: white;
+    font-size: 1.2rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans"
+}
+label, h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans"
+}
+label{
+    cursor: normal;
+}
+label.normal{
+    font-weight: normal;
+}
+input[type=ration]
+{
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background-color: #f1f1f1;
+    color: #666;
+    top: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+input[type=radio]:hover
+{
+    background-color: #f7f7f7;
+}
+body{
+    background-color: beige;
+
+}
+.container{
+    background-color: beige;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    border-radius: 5px;
+    border: 2px solid #eeeeee;
+}
+.group{
+    border-radius: 5px;
+    border: 2px solid #cccccc;
+    background-color: beige;
+    padding: 1em 0;
+    margin: 10px 0px;
+}
+.group::after{
+    display: table;
+    content: " ";
+    clear: both;
+}
+form{
+    width: 80%;
+    background-color: beige;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+form::after{
+    display: table;
+    content: " ";
+    clear: both;
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
