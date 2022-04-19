@@ -1,0 +1,98 @@
+ *{
+    box-sizing: border-box;
+    color: greenyellow;
+}
+
+body{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(121,121,121,1) 100%);
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: trattatello, fantasy;
+    text-shadow: 
+            3px 3px 0 hotpink,
+            -1px -1px 0 hotpink,
+            1px -1px 0 hotpink,
+            -1px 1px 0 hotpink,
+            1px 1px 0 hotpink;
+}
+body p{
+    color: yellow;
+}
+
+/*layout*/
+.wrapper{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(121,121,121,1) 100%);
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1px 0 1px 0;
+}
+.wrapper::after{
+    content:" ";
+    clear: both;
+    display: block;
+}
+.col1{
+    width: 25%;
+    float: left;
+    padding: 1em;
+    }
+.col2{
+    width: 50%;
+    float: left;
+    padding: 1em;
+}
+.col3{
+    width: 25%;
+    float: left;
+    padding: 1em;
+}
+article img{
+    max-width: 100%;
+}
+
+nav ul li{
+    background-color:rgba(255, 119, 216, 0.865);
+    width: 16%;
+    text-align: center;
+    display: inline-block;
+    font-size: 35px;
+    font-family: trattatello, fantasy;
+    height: 50px;
+    border-radius: 15px;
+}
+nav ul{
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+}
+aside img{
+    max-width: 100%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+footer a:link{
+    color: hotpink;
+}
+footer a:visited{
+    color: yellow;
+}
+footer a:hover{
+    color: white;
+}
+footer a:active{
+    color: blueviolet;
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+article ul li{
+    color: yellow;
+    list-style: square;
+}
