@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Conner's Birthday</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+        //event to trigger my function, interval timer.
+        //random number to randomly pick which image
+        //temporary output on what random number came up
+        //output my image to swap_image
+        let myTimer = setInterval(imageRandom, 3000);
+        function imageRandom(){
+            let randomNumber = Math.floor(Math.random() * 6) + 1;
+            //document.getElementById("check").innerHTML = randomNumber;
+            document.getElementById("conner").src = randomNumber + ".jpg";
+        }
+        </script>
+    </head>
+
+    <nav>
+        <ul class="flex_nav">
+            <li><a href="connerBirthday.html">Home</a></li>
+            <li><a href="https://www.amazon.com/">Wish List</a></li>
+            <li><a href="https://www.google.com/maps">Directions</a></li>
+        </ul>
+    </nav>
+
+    <body>
+        <h1>It's Conner's Birthday!</h1>
+        <div class="wrapper">
+        <figure><img id="conner" src="1.jpg" alt="pics of conner"></figure>    
+        <p>
+            Conner's birthday is on November 16th. This year that falls on a Monday. I typically wouldn't do anything for him, but this year everyone seems to want to. I am not sure yet what we are going to do, but I'm almost positive it's gonna be lame.  
+        </p>
+        <p>
+            If you'd like to go, that would be cool, but if you don't want to go, I totally understand that as well. It's probably not going to be that great to be completely honest. 
+        </p>
+        <p>
+            I don't mean to seem like I don't care about Conner's Birthday, but he lives with me, so I see him literally every day all the time. I think for his birthday maybe he should go out of town! That might be ideal for everyone involved!
+        </p>
+        <p>
+            Overall, I'd like for Conner to have a good party, and I hope all of you will be there, but I probably will not go, as I think his birthday gift from me will be some time away from each other. Plus, I think he wants to do a private screening of Cat's the Musical, and I definitely do NOT want to see that!
+        </p>
+        <p id="check"></p>
+        <!--button type="button" onclick="imageRandom()">Change Image</button-->
+        </div>
+    </body>
+    <footer>
+        Webmaster: Marcos Mateus<br>
+        Last Updated: 11/12/20
+    </footer>
+</html>
